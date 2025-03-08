@@ -1,0 +1,111 @@
+/* Styles de base pour la page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Copyright initialement caché */
+.copyright {
+    
+    position: fixed;
+    bottom: 10px; /* Positionne à 10px du bas */
+    right: 10px; /* Aligne à droite */
+    font-style: italic;
+    font-family: "Courier New", monospace; /* Police monospace */
+    font-size: 14px; /* Taille de la police */
+    color: white; /* Couleur du texte */
+}
+
+
+/* Styles pour la barre de navigation */
+nav {
+    position: fixed; /* Fixe la barre de navigation en haut */
+    top: 0; /* L'ancre en haut de la page */
+    z-index: 10; /* S'assurer que la barre de navigation est au-dessus du contenu */
+    left: 50%; /* Place la barre au centre horizontalement */
+    width: 100%;
+    transform: translateX(-50%); /* Ajuste la position pour être parfaitement centrée */   
+    background-color: #050505;
+    padding: 10px 0;
+ 
+}
+
+/* Styles pour la liste de navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Styles pour chaque élément de la liste */
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+/* Styles pour les liens */
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet de survol */
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Effet Parallax pour la première image (pic10.jpg) */
+.parallax {
+    position: relative;
+    background-image: url('pic10.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh; /* Vue entière de la page */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax h1 {
+    font-size: 3em;
+}
+
+/* Bloc noir avec le message "It s Dark in here" */
+.dark-block {
+    background-color: black;
+    color: white;
+    padding: 500px;
+    text-align: center;
+}
+
+.dark-block h2 {
+    font-size: 2em;
+}
+
+/* Deuxième image (pic20.jpeg) avec le message "All you need is Peace" */
+.parallax-2 {
+    position: relative;
+    background-image: url('pic20.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh; /* Vue entière de la page */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.parallax-2 h1 {
+    font-size: 3em;
+}
