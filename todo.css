@@ -1,0 +1,30 @@
+
+        /* Styles pour la To Do List */
+        #ft_list {
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+         display: none;
+         display: block;
+            
+        }
+        .task {
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #e7e7e7;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #taskInput {
+            width: 80%;
+            padding: 8px;
+            margin-right: 5px;
+        }
+        #addButton, #newButton, #clearButton {
+            padding: 8px 12px;
+        }
+ 

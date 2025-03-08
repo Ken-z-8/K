@@ -1,0 +1,49 @@
+/* Style de base pour la page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style du ballon */
+.ballon {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transition pour la taille du ballon */
+}
+
+/* Effet explosion : Animation de la déformation du ballon */
+@keyframes explosion {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Classe 'explose' appliquée lors de l'explosion */
+.ballon.explose {
+    animation: explosion 0.5s forwards; /* Animation de l'explosion */
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Les particules apparaissent derrière le ballon */
+}
