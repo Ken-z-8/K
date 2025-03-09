@@ -68,7 +68,7 @@ nav ul li a:hover {
 }
 
 /* Effet Parallax pour la première image */
-.parallax, .parallax-2 {
+.parallax {
     position: relative;
     background-attachment: fixed;
     background-size: cover; /* Couvre toute la section */
@@ -87,6 +87,19 @@ nav ul li a:hover {
     background-image: url('pic10.jpg');
 }
 
+.parallax-2 {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover; /* Couvre toute la section */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Vue entière de la page */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 .parallax-2 {
     background-image: url('pic20.jpeg');
 }
