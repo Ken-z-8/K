@@ -6,19 +6,17 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
+/* Styles pour les images */
 img {
-  max-width: 100%;  /* Empêche l’image d’être plus grande que l’écran */
-  height: auto;      /* Garde le ratio original */
-  object-fit: contain; /* Évite que l’image soit rognée */
-  display: block;     /* Supprime les marges blanches */
-  margin: 0 auto;     /* Centre l’image */
+    max-width: 100%;  /* Empêche l’image d’être plus grande que l’écran */
+    height: auto;      /* Garde le ratio original */
+    object-fit: contain; /* Évite que l’image soit rognée */
+    display: block;     /* Supprime les marges blanches */
+    margin: 0 auto;     /* Centre l’image */
 }
-
-
 
 /* Copyright initialement caché */
 .copyright {
-    
     position: fixed;
     bottom: 10px; /* Positionne à 10px du bas */
     right: 10px; /* Aligne à droite */
@@ -28,18 +26,16 @@ img {
     color: white; /* Couleur du texte */
 }
 
-
 /* Styles pour la barre de navigation */
 nav {
     position: fixed; /* Fixe la barre de navigation en haut */
-    top: 0; /* L'ancre en haut de la page */
+    top: 0;
     z-index: 10; /* S'assurer que la barre de navigation est au-dessus du contenu */
-    left: 50%; /* Place la barre au centre horizontalement */
+    left: 50%;
     width: 100%;
-    transform: translateX(-50%); /* Ajuste la position pour être parfaitement centrée */   
+    transform: translateX(-50%); /* Ajuste la position pour être parfaitement centrée */
     background-color: #050505;
     padding: 10px 0;
- 
 }
 
 /* Styles pour la liste de navigation */
@@ -71,14 +67,13 @@ nav ul li a:hover {
     background-color: #575757;
 }
 
-/* Effet Parallax pour la première image (pic10.jpg) */
-.parallax {
+/* Effet Parallax pour la première image */
+.parallax, .parallax-2 {
     position: relative;
-    background-image: url('pic10.jpg');
     background-attachment: fixed;
     background-size: cover; /* Couvre toute la section */
-        background-position: center;
-        background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh; /* Vue entière de la page */
     color: white;
     display: flex;
@@ -87,41 +82,40 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.parallax h1 {
+/* Images de fond */
+.parallax {
+    background-image: url('pic10.jpg');
+}
+
+.parallax-2 {
+    background-image: url('pic20.jpeg');
+}
+
+/* 📱 Ajustement spécial pour mobile */
+@media screen and (max-width: 768px) {
+    .parallax, .parallax-2 {
+        background-attachment: scroll; /* Désactive l'effet fixe sur mobile */
+        background-size: contain; /* Affiche l’image en entier */
+    }
+}
+
+/* Titres dans les sections parallax */
+.parallax h1, .parallax-2 h1 {
     font-size: 3em;
 }
 
-/* Bloc noir avec le message "It s Dark in here" */
+/* Bloc noir avec le message "It’s Dark in here" */
 .dark-block {
     background-color: black;
     color: white;
-    padding: 500px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
+/* Style du texte du bloc noir */
 .dark-block h2 {
     font-size: 2em;
-}
-
-/* Deuxième image (pic20.jpeg) avec le message "All you need is Peace" */
-.parallax-2 {
-    position: relative;
-    background-image: url('pic20.jpeg');
-    background-attachment: fixed;
-  background-size: cover; /* Couvre toute la section */
-        background-position: center;
-        background-repeat: no-repeat;
-    height: 100vh; /* Vue entière de la page */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.parallax-2 h1 {
-    font-size: 3em;
 }
