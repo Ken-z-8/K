@@ -76,7 +76,9 @@ nav ul li a:hover {
     position: relative;
     background-image: url('pic10.jpg');
     background-attachment: fixed;
-    
+    background-size: contain; /* Couvre toute la section */
+        background-position: center;
+        background-repeat: no-repeat;
     height: 100vh; /* Vue entière de la page */
     color: white;
     display: flex;
@@ -109,7 +111,9 @@ nav ul li a:hover {
     position: relative;
     background-image: url('pic20.jpeg');
     background-attachment: fixed;
-  
+  background-size: contain; /* Couvre toute la section */
+        background-position: center;
+        background-repeat: no-repeat;
     height: 100vh; /* Vue entière de la page */
     color: white;
     display: flex;
@@ -120,12 +124,4 @@ nav ul li a:hover {
 
 .parallax-2 h1 {
     font-size: 3em;
-}
-@media screen and (max-width: 768px) {
-    .parallax, .parallax-2 {
-        background-attachment: scroll; /* Désactive le "fixed" sur mobile */
-        background-size: contain; /* Couvre toute la section */
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 }
