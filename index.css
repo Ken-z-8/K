@@ -13,21 +13,7 @@ img {
   display: block;     /* Supprime les marges blanches */
   margin: 0 auto;     /* Centre l’image */
 }
-/* Styles pour les écrans de moins de 768px (tablettes et mobiles) */
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
 
-  .container {
-    flex-direction: column; /* Passe en colonne sur mobile */
-  }
-
-  img {
-    max-width: 100%; /* Évite que les images débordent */
-    height: auto;
-  }
-}
 
 
 /* Copyright initialement caché */
