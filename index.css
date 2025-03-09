@@ -94,9 +94,10 @@ nav ul li a:hover {
     background-color: black;
     color: white;
     padding: 500px;
-    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .dark-block h2 {
