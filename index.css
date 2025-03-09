@@ -100,13 +100,6 @@ nav ul li a:hover {
     background-image: url('pic20.jpeg');
 }
 
-/* 📱 Ajustement spécial pour mobile */
-@media screen and (max-width: 768px) {
-    .parallax, .parallax-2 {
-        background-attachment: scroll; /* Désactive l'effet fixe sur mobile */
-        background-size: contain; /* Affiche l’image en entier */
-    }
-}
 
 /* Titres dans les sections parallax */
 .parallax h1, .parallax-2 h1 {
