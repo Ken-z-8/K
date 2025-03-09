@@ -121,3 +121,10 @@ nav ul li a:hover {
 .dark-block h2 {
     font-size: 2em;
 }
+/* 📱 Ajustement spécial pour mobile */
+@media screen and (max-width: 768px) {
+    .parallax, .parallax-2 {
+        background-attachment: scroll; /* Désactive l'effet fixe sur mobile */
+        background-size: contain; /* Affiche l’image en entier */
+    }
+}
