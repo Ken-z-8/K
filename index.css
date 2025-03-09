@@ -123,3 +123,10 @@ nav ul li a:hover {
 .parallax-2 h1 {
     font-size: 3em;
 }
+@media screen and (max-width: 768px) {
+    .parallax, .parallax-2 {
+        background-attachment: scroll; /* Désactive l'effet fixe */
+        background-size: contain; /* Garde l’image entière visible */
+        min-height: 100vh; /* S’assure que l’image prend tout l’écran */
+    }
+}
