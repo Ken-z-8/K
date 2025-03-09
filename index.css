@@ -13,22 +13,6 @@ img {
   display: block;     /* Supprime les marges blanches */
   margin: 0 auto;     /* Centre l’image */
 }
-.background-image {
-  background-size: cover; /* Ajuste l’image pour couvrir toute la zone */
-  background-position: center; /* Centre l’image */
-  background-repeat: no-repeat; /* Empêche la répétition */
-}
-* {
-  max-width: 100%;  /* Évite que les éléments dépassent la taille de l’écran */
-  overflow-x: hidden; /* Empêche le défilement horizontal */
-}
-
-.container {
-  width: 90%; /* Réduit la largeur sur mobile */
-  max-width: 1200px; /* Garde une limite sur grand écran */
-  margin: auto; /* Centre le contenu */
-}
-
 /* Styles pour les écrans de moins de 768px (tablettes et mobiles) */
 @media screen and (max-width: 768px) {
   body {
