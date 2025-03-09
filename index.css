@@ -93,7 +93,7 @@ nav ul li a:hover {
 .dark-block {
     background-color: black;
     color: white;
-    padding: 500px;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
